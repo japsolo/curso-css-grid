@@ -1,0 +1,19 @@
+.container {
+	/* Grid System */
+	display: grid;
+	grid-template-columns: 100px repeat(4, 1fr);
+	grid-template-rows: 100px 250px;
+	gap: 10px;
+}
+
+.special {
+	background-color: #db637f;
+
+	grid-column-start: 1;
+	grid-column-end: -1;
+	/* Shorthand ➜ grid-colum: 1 / -1 */
+
+	grid-row-start: 2;
+	grid-row-end: 3;
+	/* Shorthand ➜ grid-row: 2 / 3;  */
+}

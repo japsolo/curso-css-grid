@@ -1,0 +1,13 @@
+.container {
+	height: 600px;
+
+	/* Grid System */
+	display: grid;
+	gap: 10px;
+	grid-template-columns: repeat(3, 150px);
+	grid-template-rows: repeat(3, 150px);
+	
+	/* Alineación de contenido */
+	justify-content: space-evenly; /* Horizontal */
+	align-content: space-evenly; /* Vertical */
+}

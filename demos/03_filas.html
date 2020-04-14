@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CSS Grid - Creando filas</title>
+	<!-- PreCode Stylesheet - Doesn't need it in real projects -->
+	<link rel="stylesheet" href="dist/prism.css">
+	<!-- Base Stylesheet -->
+	<link rel="stylesheet" href="dist/app.css">
+	<!-- File Stylesheet -->
+	<link rel="stylesheet" href="dist/03_filas.css">
+</head>
+<body>
+	<h1>CSS Grid - Creando filas</h1>
+	<div class="container">
+		<div class="item">01</div>
+		<div class="item">02</div>
+		<div class="item">03</div>
+		<div class="item">04</div>
+		<div class="item">05</div>
+		<div class="item">06</div>
+		<div class="item">07</div>
+		<div class="item">08</div>
+		<div class="item">09</div>
+		<div class="item">10</div>
+		<div class="item">11</div>
+		<div class="item">12</div>
+	</div>
+<div class="wrapper">
+<p>Reglas CSS:</p>
+<pre>
+	<code class="language-css">
+	.container {
+		/* Grid System */
+		display: grid;
+		grid-template-columns: 100px 1fr 1fr 100px;
+		grid-template-rows: 50px 100px 150px;
+	}
+	</code>
+</pre>
+</div>
+
+	<!-- PreCode JS - Doesn't need it in real projects -->
+	<script src="dist/prism.js"></script>
+</body>
+</html>

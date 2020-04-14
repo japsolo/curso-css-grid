@@ -1,0 +1,43 @@
+.container {
+	/* Grid System */
+	display: grid;
+	gap: 10px;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-areas:
+		'header 		header 		header'
+		'sidebar 	content 		content'
+		'sidebar 	content 		content'
+		'footer 		footer 		footer'
+	;
+}
+
+.header,
+.sidebar,
+.content,
+.footer {
+	color: #ffffff;
+	padding: 15px;
+	font-size: 1.8em;
+	text-align: center;
+}
+
+.header {
+	grid-area: header; /* el valor, no va entre comillas */
+	background-color: #db637f;
+}
+
+.sidebar {
+	grid-area: sidebar; /* el valor, no va entre comillas */
+	background-color: #222e50;
+}
+
+.content {
+	grid-area: content; /* el valor, no va entre comillas */
+	background-color: #ffe882
+}
+
+.footer {
+	grid-area: footer; /* el valor, no va entre comillas */
+	background-color: #542344
+}
+

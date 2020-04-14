@@ -1,0 +1,7 @@
+.container {
+	/* Grid System */
+	display: grid;
+	grid-template-columns: repeat(3, minmax(80px, 120px)) 1fr;
+	grid-template-rows: repeat(3, minmax(120px, auto));
+	gap: 10px;
+}

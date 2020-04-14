@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CSS Grid - Grid Flow</title>
+	<!-- PreCode Stylesheet - Doesn't need it in real projects -->
+	<link rel="stylesheet" href="dist/prism.css">
+	<!-- Base Stylesheet -->
+	<link rel="stylesheet" href="dist/app.css">
+	<!-- File Stylesheet -->
+	<link rel="stylesheet" href="dist/11_grid_flow.css">
+</head>
+<body>
+	<h1>CSS Grid - Grid Flow</h1>
+	<div class="container">
+		<div class="item">01</div>
+		<div class="item span2">02 <br> <code>.span2</code></div>
+		<div class="item">03</div>
+		<div class="item span3">04 <br> <code>.span3</code></div>
+		<div class="item">05</div>
+		<div class="item">06</div>
+		<div class="item span3">07 <br> <code>.span3</code></div>
+		<div class="item">08</div>
+		<div class="item">09</div>
+	</div>
+
+<div class="wrapper">
+<p>Reglas CSS:</p>
+<pre>
+<code class="language-css">
+	.container {
+		/* Grid System */
+		display: grid;
+		gap: 10px;
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: repeat(3, 150px);
+		grid-auto-flow: row dense;
+	}
+	
+	.span2 {
+		grid-column: span 2;
+		background-color: #542344;
+	}
+	
+	.span3 {
+		grid-column: span 3;
+		background-color: #db637f;
+	}
+</code>
+</pre>
+</div>
+
+	<!-- PreCode JS - Doesn't need it in real projects -->
+	<script src="dist/prism.js"></script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+.container {
+	/* Grid System */
+	display: grid;
+	gap: 10px;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(3, minmax(150px, auto));
+	/* Alineación */
+	justify-items: center; /* Horizontal */
+	align-items: center; /* Vertical */
+}
+
+.special {
+	justify-self: stretch;
+	align-self: end;
+	background-color: #542344;
+}

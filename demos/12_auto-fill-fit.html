@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CSS Grid - Auto Fill & Auto Fit</title>
+	<!-- PreCode Stylesheet - Doesn't need it in real projects -->
+	<link rel="stylesheet" href="dist/prism.css">
+	<!-- Base Stylesheet -->
+	<link rel="stylesheet" href="dist/app.css">
+	<!-- File Stylesheet -->
+	<link rel="stylesheet" href="dist/12_auto_fill_fit.css">
+</head>
+<body>
+	<h1>CSS Grid - Auto Fill & Auto Fit</h1>
+
+	<h2>Auto Fit <br> <code>(.fit)</code></h2>
+	<div class="container fit">
+		<div class="item">01</div>
+		<div class="item">02</div>
+		<div class="item">03</div>
+		<div class="item">04</div>
+	</div>
+	
+	<h2>Auto Fill <br> <code>(.fill)</code></h2>
+	<div class="container fill">
+		<div class="item">01</div>
+		<div class="item">02</div>
+		<div class="item">03</div>
+		<div class="item">04</div>
+	</div>
+
+	<p>Has <i>resize</i> de la ventana del navegador.</p>
+
+<div class="wrapper">
+<p>Reglas CSS:</p>
+<pre>
+<code class="language-css">
+	.container {
+		/* Grid System */
+		display: grid;
+		gap: 10px;
+	}
+	
+	.fit {
+		grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+	}
+	
+	.fill {
+		grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+	}
+</code>
+</pre>
+</div>
+
+	<!-- PreCode JS - Doesn't need it in real projects -->
+	<script src="dist/prism.js"></script>
+</body>
+</html>

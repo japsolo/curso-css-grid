@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CSS Grid - Grid Areas</title>
+	<!-- PreCode Stylesheet - Doesn't need it in real projects -->
+	<link rel="stylesheet" href="dist/prism.css">
+	<!-- Base Stylesheet -->
+	<link rel="stylesheet" href="dist/app.css">
+	<!-- File Stylesheet -->
+	<link rel="stylesheet" href="dist/08_grid_areas.css">
+</head>
+<body>
+	<h1>CSS Grid - Grid Areas</h1>
+	<div class="container">
+		<div class="header">01</div>
+		<div class="sidebar">02</div>
+		<div class="content">
+			03
+			<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque magnam eos itaque repellat, obcaecati quo. Voluptate est laudantium nisi atque impedit. Esse ullam amet temporibus doloremque voluptatum at assumenda dicta.</p>
+		</div>
+		<div class="footer">04</div>
+	</div>
+
+<div class="wrapper">
+<p>Código HTML:</p>
+<pre>
+	<code class="language-html">
+	&lt;div class="container"&gt;
+		&lt;div class="header"&gt;01&lt;/div&gt;
+		&lt;div class="sidebar"&gt;02&lt;/div&gt;
+		&lt;div class="content"&gt;03&lt;/div&gt;
+		&lt;div class="footer"&gt;04&lt;/div&gt;
+	&lt;/div&gt;
+	</code>
+</pre>
+
+<br><br>
+
+<p>Reglas CSS:</p>
+<pre>
+	<code class="language-css">
+	.container {
+		/* Grid System */
+		display: grid;
+		gap: 10px;
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-areas:
+			'header 	header 		header'
+			'sidebar 	content 	content'
+			'sidebar 	content 	content'
+			'footer 	footer 		footer'
+		;
+	}
+	
+	.header,
+	.sidebar,
+	.content,
+	.footer {
+		color: #ffffff;
+		padding: 15px;
+		font-size: 1.8em;
+		text-align: center;
+	}
+	
+	.header {
+		grid-area: header; /* el valor, no va entre comillas */
+		background-color: #db637f;
+	}
+	
+	.sidebar {
+		grid-area: sidebar; /* el valor, no va entre comillas */
+		background-color: #222e50;
+	}
+	
+	.content {
+		grid-area: content; /* el valor, no va entre comillas */
+		background-color: #ffe882
+	}
+	
+	.footer {
+		grid-area: footer; /* el valor, no va entre comillas */
+		background-color: #542344
+	}
+	</code>
+</pre>
+</div>
+
+	<!-- PreCode JS - Doesn't need it in real projects -->
+	<script src="dist/prism.js"></script>
+</body>
+</html>

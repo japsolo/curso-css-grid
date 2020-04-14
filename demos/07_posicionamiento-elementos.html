@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CSS Grid - Posicionamiento de elementos</title>
+	<!-- PreCode Stylesheet - Doesn't need it in real projects -->
+	<link rel="stylesheet" href="dist/prism.css">
+	<!-- Base Stylesheet -->
+	<link rel="stylesheet" href="dist/app.css">
+	<!-- File Stylesheet -->
+	<link rel="stylesheet" href="dist/07_posicionamiento_elementos.css">
+</head>
+<body>
+	<h1>CSS Grid - Posicionamiento de elementos</h1>
+	<div class="container">
+		<div class="item special">01 <br> <code>.special</code></div>
+		<div class="item">02</div>
+		<div class="item">03</div>
+		<div class="item">04</div>
+		<div class="item">05</div>
+		<div class="item">06</div>
+		<div class="item">07</div>
+		<div class="item">08</div>
+		<div class="item">09</div>
+		<div class="item">10</div>
+		<div class="item">11</div>
+		<div class="item">12</div>
+	</div>
+<div class="wrapper">
+<p>Reglas CSS:</p>
+<pre>
+	<code class="language-css">
+	.container {
+		/* Grid System */
+		display: grid;
+		grid-template-columns: 100px repeat(4, 1fr);
+		grid-template-rows: 100px 250px;
+		gap: 10px;
+	}
+	
+	.special {
+		background-color: #db637f;
+
+		grid-column-start: 1;
+		grid-column-end: -1;
+		/* Shorthand ➜ grid-colum: 1 / -1 */
+		
+		grid-row-start: 2;
+		grid-row-end: 3;
+		/* Shorthand ➜ grid-row: 2 / 3; */
+	}
+	</code>
+</pre>
+</div>
+
+	<!-- PreCode JS - Doesn't need it in real projects -->
+	<script src="dist/prism.js"></script>
+</body>
+</html>
