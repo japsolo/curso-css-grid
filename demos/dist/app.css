@@ -65,3 +65,38 @@ h1::before {
 	border: solid 1px rgba(0, 0, 0, 0.2);
 }
 
+
+/* Ribbon */
+
+.ribbon {
+	background-color: #ff5964;
+	color: #ffffff;
+	font-size: 1.3em;
+	padding: 5px;
+	position: fixed;
+	right: 0;
+	top: 15px;
+	transform: rotate(45deg) translateX(20px);
+	display: block;
+	color: #ffffff;
+	font-weight: 400;
+	text-decoration: none;
+}
+
+.ribbon::after,
+.ribbon::before{
+	content: '';
+	position: absolute;
+	top: 0;
+	height: 100%;
+	width: 30px;
+	background-color: #ff5964;
+}
+
+.ribbon::before {
+	left: -28px;
+}
+
+.ribbon::after {
+	right: -28px;
+}
